@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoPlay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: #f9f9f9;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
     h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #222;
       margin-bottom: 40px;
     }
+
+    .buttons {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+    }
+
     .project-link {
-      display: inline-block;
-      margin: 20px;
-      padding: 20px 40px;
-      background-color: #4CAF50;
+      padding: 16px 36px;
+      background: #4CAF50;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      transition: background-color 0.3s;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
+
     .project-link:hover {
-      background-color: #45a049;
+      background-color: #43a047;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
 <body>
- 
-  <h1>AlgoPlay</h1>
 
-  <a class="project-link" href="snakegame/index.html">Snake Game</a>
-  <a class="project-link" href="tetris/index.html">Tetris</a>
+  <div class="container">
+    <h1>AlgoPlay</h1>
+    <div class="buttons">
+      <a class="project-link" href="snakegame/index.html">🐍 Snake Game</a>
+      <a class="project-link" href="tetris/index.html">🧱 Tetris</a>
+    </div>
+  </div>
 
 </body>
 </html>
